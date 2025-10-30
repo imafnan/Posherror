@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-import s1 from "../public/Effect.png";
+import s1 from "../public/Effect.png";        
 import s2 from "../public/Error.svg";
 import s3 from "../public/Opps.svg";
 import s4 from "../public/Robot.svg";
@@ -38,7 +38,7 @@ const Posherror = () => {
     setOffset({ x, y });
   };
 
-  // ✅ Typed event
+  //  Typed event
   const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
     if (isMobileOrTablet) return;
     setOffset({ x: 0, y: 0 });
@@ -92,7 +92,7 @@ const Posherror = () => {
           src={s4}
           alt="Robot"
           className="absolute z-[10] transition-transform duration-500 ease-out
-          top-[28%] left-[57%] md:left-[53px] md:top-[28px] -translate-x-1/2 
+          top-[28%] left-[53%]  -translate-x-1/2 
           w-[160px]
           sm:w-[200px]
           md:w-[250px]
