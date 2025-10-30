@@ -112,6 +112,36 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow s ease-in-out infinite;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -120,3 +150,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+

@@ -1,54 +1,100 @@
-import {
-  ScrollVelocityContainer,
-  ScrollVelocityRow,
-} from "@/components/ui/scroll-based-velocity"
+import React from 'react';
 
-const IMAGES_ROW_A = [
-  "https://images.unsplash.com/photo-1749738456487-2af715ab65ea?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://plus.unsplash.com/premium_photo-1720139288219-e20aa9c8895b?q=80&w=1810&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-]
+import gr from  '../public/gr.png'
+import gr1 from '../public/gr1.png'
+import op from '../public//op.png'
+import ro from '../public/ro.png'
+import er from '../public/er.png'
+import Image from 'next/image';
 
-const IMAGES_ROW_B = [
-  "https://images.unsplash.com/photo-1749738456487-2af715ab65ea?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://plus.unsplash.com/premium_photo-1720139288219-e20aa9c8895b?q=80&w=1810&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-]
-
-export function ScrollBasedVelocityImagesDemo() {
+const Anan = () => {
   return (
-    <div className="relative flex w-full  items-center justify-center overflow-hidden py-8">
-      <ScrollVelocityContainer className="w-full">
-        <ScrollVelocityRow baseVelocity={6} direction={1} className="">
-          {IMAGES_ROW_A.map((src, idx) => (
-            <img
-              key={idx}
-              src={`${src}&ixlib=rb-4.0.3`}
-              alt="Unsplash sample"
-              width={300}
-              height={160}
-              loading="lazy"
-              decoding="async"
-              className="mx-1 inline-block h-70 w-120 rounded-[5px] object-cover shadow-sm"
-            />
-          ))}
-        </ScrollVelocityRow>
-        <ScrollVelocityRow baseVelocity={6} direction={-1} className="">
-          {IMAGES_ROW_B.map((src, idx) => (
-            <img
-              key={idx}
-              src={`${src}&ixlib=rb-4.0.3`}
-              alt="Unsplash sample"
-              width={240}
-              height={160}
-              loading="lazy"
-              decoding="async"
-              className="mx-1 inline-block h-70 w-120 rounded-[5px] object-cover shadow-sm"
-            />
-          ))}
-        </ScrollVelocityRow>
-      </ScrollVelocityContainer>
+    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white flex items-center justify-center p-4">
+      
+      <div className="relative w-full max-w-4xl mx-auto text-center">
+        {/* Background Gears - Decorative */}
+        <Image  
+          src={gr}
+          alt="gear" 
+          className="absolute left-10 bottom-20 w-16 h-16 md:w-20 md:h-20 animate-spin-slow opacity-70"
+        />
+        <Image
+          src={gr1} 
+          alt="gear" 
+          className="absolute left-20 bottom-10 w-12 h-12 md:w-16 md:h-16 animate-spin-reverse opacity-60"
+        />
 
-      <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
-      <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
+        {/* Main Content */}
+        <div className="relative z-10">
+          {/* 404 Text */}
+          <div className="mb-6">
+            <Image 
+              src={er} 
+              alt="404" 
+              className="mx-auto w-48 h-auto md:w-64"
+            />
+          </div>
+
+        
+
+          {/* Robot with Map */}
+          <div className="relative inline-block">
+            <Image 
+              src={ro} 
+              alt="Lost Robot" 
+              className="w-48 h-auto md:w-64 mx-auto"
+            />
+          
+          </div>
+
+          {/* Oops Badge */}
+          <div className="absolute top-16 right-10 md:top-20 md:right-16">
+            <Image 
+              src={op} 
+              alt="Oops!" 
+              className="w-20 h-auto md:w-28 animate-bounce"
+            />
+          </div>
+
+          {/* Back to Home Button */}
+          <div className="mt-12">
+            <button className="px-8 py-3 bg-gradient-to-r from-pink-500 to-orange-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+              Back To Home
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Custom Animations */}
+      <style jsx>{`
+        @keyframes spin-slow {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes spin-reverse {
+          from {
+            transform: rotate(360deg);
+          }
+          to {
+            transform: rotate(0deg);
+          }
+        }
+
+        .animate-spin-slow {
+          animation: spin-slow 10s linear infinite;
+        }
+
+        .animate-spin-reverse {
+          animation: spin-reverse 8s linear infinite;
+        }
+      `}</style>
     </div>
-  )
-}
+  );
+};
+
+export default Anan;
