@@ -60,7 +60,7 @@ const Posherror = () => {
           src={s2}
           alt="Error"
           className="absolute transition-transform duration-500 ease-out
-          top-[25%] left-[7%] w-[120px]
+          top-[25%] left-[5%] w-[120px]
           sm:top-[17%] sm:left-[34%] sm:w-[160px]
           md:top-[18%] md:left-[32%] md:w-[200px]
           lg:w-[250px]"
@@ -76,7 +76,7 @@ const Posherror = () => {
           src={s3}
           alt="Opps"
           className="absolute transition-transform duration-500 ease-out
-          top-[25%] left-[70%] w-[70px]
+          top-[25%] left-[73%] w-[70px]
           sm:top-[22%] sm:left-[58%] sm:w-[120px]
           md:top-[23%] md:left-[60%] md:w-[140px]
           lg:w-[160px]"
@@ -92,7 +92,7 @@ const Posherror = () => {
           src={s4}
           alt="Robot"
           className="absolute z-[10] transition-transform duration-500 ease-out
-          top-[28%] left-[53%] -translate-x-1/2 
+          top-[28%] left-[57%] md:left-[53px] md:top-[28px] -translate-x-1/2 
           w-[160px]
           sm:w-[200px]
           md:w-[250px]
@@ -109,7 +109,7 @@ const Posherror = () => {
           src={s5}
           alt="Gears"
           className="absolute z-[10] transition-transform duration-500 ease-out
-          top-[55%] left-[19%] w-[100px]
+          top-[57%] left-[16%] w-[100px]
           sm:top-[62%] sm:left-[34%] sm:w-[130px]
           md:top-[66%] md:left-[36%] md:w-[150px]
           lg:w-[170px]"
@@ -132,7 +132,7 @@ const Posherror = () => {
         md:w-[470px] md:h-[350px]
         lg:w-[600px] lg:h-[450px]"
       />
-      <button className="absolute top-[76%] md:top-[90%] left-[37%] md:left-[48%] text-[14px] font-medium bg-gradient-to-r to-[#F1622A] from-[#EC1577]  text-white rounded px-[16px] py-[10px] ">
+      <button className="absolute top-[76%] md:top-[90%] left-[34%] md:left-[48%] text-[14px] font-medium bg-gradient-to-r to-[#F1622A] from-[#EC1577]  text-white rounded px-[16px] py-[10px] ">
         Back To Home 
       </button>
     </div>
