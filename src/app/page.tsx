@@ -1,8 +1,11 @@
 "use client";
 
-import Anan from '@/Anan'
-import Pagess from '@/Posherror';
-import Posherror from '@/Posherror';
+import { TimelineDemo } from '@/components/As';
+import { WobbleCardDemo } from '@/components/Gri';
+import { StickyScrollRevealDemo } from '@/components/St';
+// import Anan from '@/Anan'
+// import Pagess from '@/Posherror';
+// import Posherror from '@/Posherror';
 import React from 'react'
 // import Tabs, { tabData } from '../../src/Tabs'
 // import Featuredworks from '@/Caedss'
@@ -21,7 +24,10 @@ const page = () => {
       <Featuredworks />
       <ScrollBasedVelocityImagesDemo/> */}
       {/* <Posherror/> */}
-      <Pagess/>
+      {/* <Pagess/> */}
+      <WobbleCardDemo/>
+      <TimelineDemo/>
+      <StickyScrollRevealDemo/>
     </div>
   )
 }
