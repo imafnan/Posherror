@@ -1,8 +1,12 @@
 "use client";
 
+import Ca from '@/Ca';
 import { TimelineDemo } from '@/components/As';
 import { WobbleCardDemo } from '@/components/Gri';
+import Ro from '@/components/Ro';
 import { StickyScrollRevealDemo } from '@/components/St';
+import { HeroParallaxDemo } from '@/components/Tan';
+import HorizontalScroll from '@/Hrcard';
 // import Anan from '@/Anan'
 // import Pagess from '@/Posherror';
 // import Posherror from '@/Posherror';
@@ -28,6 +32,13 @@ const page = () => {
       <WobbleCardDemo/>
       <TimelineDemo/>
       <StickyScrollRevealDemo/>
+      <Ca/>
+      <HeroParallaxDemo/>
+      {/* <Anan/> */}
+
+      <Ro/>
+      <HorizontalScroll/>
+      
     </div>
   )
 }
