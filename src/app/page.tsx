@@ -2,9 +2,13 @@
 
 import Ca from '@/Ca';
 import { TimelineDemo } from '@/components/As';
+import { BackgroundLinesDemo } from '@/components/Btry';
 import { WobbleCardDemo } from '@/components/Gri';
 import Ro from '@/components/Ro';
+import Sl from '@/components/Sl';
+import { SpotlightNewDemo } from '@/components/Spo';
 import { StickyScrollRevealDemo } from '@/components/St';
+import Offers from '@/components/Stac';
 import { HeroParallaxDemo } from '@/components/Tan';
 import HorizontalScroll from '@/Hrcard';
 // import Anan from '@/Anan'
@@ -29,15 +33,20 @@ const page = () => {
       <ScrollBasedVelocityImagesDemo/> */}
       {/* <Posherror/> */}
       {/* <Pagess/> */}
-      <WobbleCardDemo/>
-      <TimelineDemo/>
-      <StickyScrollRevealDemo/>
-      <Ca/>
-      <HeroParallaxDemo/>
+      {/* <WobbleCardDemo/> */}
+      {/* <TimelineDemo/> */}
+      {/* <StickyScrollRevealDemo/> */}
+      {/* <Ca/> */}
+      {/* <HeroParallaxDemo/> */}
       {/* <Anan/> */}
 
-      <Ro/>
-      <HorizontalScroll/>
+      {/* <Ro/> */}
+      {/* <HorizontalScroll/> */}
+      {/* <BackgroundLinesDemo/> */}
+      {/* <HorizontalScroll/> */}
+      {/* <Sl/> */}
+      {/* <SpotlightNewDemo/> */}
+      {/* <Offers/> */}
       
     </div>
   )
